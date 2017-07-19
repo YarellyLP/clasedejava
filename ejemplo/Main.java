@@ -18,7 +18,7 @@
       System.out.println(m);
       
       System.out.println("La divicion de 20 y 10 es: ");
-       int d = div(20, 10);
+      double d = div(20, 10);
       System.out.println(d);
     }
     
@@ -34,7 +34,7 @@
       return nu * nd;
     }
     
-    public static int div(int nu, int nd){
+    public static double div(double nu, double nd){
       return nu / nd;
     }
     
