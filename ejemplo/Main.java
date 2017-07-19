@@ -16,6 +16,10 @@
       System.out.println("La multiplicacion de 20 y 10 es: ");
        int m = mult(20, 10);
       System.out.println(m);
+      
+      System.out.println("La divicion de 20 y 10 es: ");
+       int d = div(20, 10);
+      System.out.println(d);
     }
     
     public static int suma(int nu, int nd){
@@ -29,4 +33,9 @@
      public static int mult(int nu, int nd){
       return nu * nd;
     }
+    
+    public static int div(int nu, int nd){
+      return nu / nd;
+    }
+    
   }
