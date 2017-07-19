@@ -17,9 +17,17 @@
        int m = mult(20, 10);
       System.out.println(m);
       
-      System.out.println("La divicion de 20 y 10 es: ");
-      double d = div(20, 10);
-      System.out.println(d);
+      try{
+        System.out.println("La divicion de 20 y 0 es: ");
+        double d = div(20, 0);
+        System.out.println(d);
+      } catch(Exception e) {
+        //e.printStackTrace();
+        String mensaje = e.getMessage();
+        System.out.println(mensaje);
+      }
+      
+      
     }
     
     public static int suma(int nu, int nd){
@@ -34,7 +42,11 @@
       return nu * nd;
     }
     
-    public static double div(double nu, double nd){
+    public static double div(double nu, double nd) throws Exception{
+      if(nd == 0){
+        throw new Exception("No es posible dividir por el numero 0");
+      }
+      
       return nu / nd;
     }
     
